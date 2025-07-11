@@ -20,12 +20,16 @@ font-size: 0.95rem;
 color:#888889;
 }
 .gameStatus{
- background: green;
+  background: green;
   height: 40px;
   display: block;
   width: 50%;
   margin: 0 auto;
   padding: 5px;
+  line-height: 1em;
+}
+.gameStatus>h4{
+  margin: 2px;
 }
 .chips{
   width: 350px;
@@ -36,7 +40,18 @@ color:#888889;
   padding: 0.4em;
   margin: 5px;
   border-radius: 4px;
-  width: fit-content;
+  position: relative;
+}
+.colorChip.lost::before{
+  content: "💀";
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  background-color: #323232d1;  
+  border-radius: 4px;
+  line-height: 2em;
 }
 .enteredLetter{
   width: 40px;
@@ -74,3 +89,10 @@ border-radius: 3px;
   border: 1px solid rgb(207, 219, 223);
   width: 40%;
 }
+.keySection>button.exist{
+  background-color: green;
+}
+.keySection>button.nonexist{
+  background-color: brown;
+}
+
