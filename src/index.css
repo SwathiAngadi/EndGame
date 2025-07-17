@@ -105,6 +105,7 @@ width: 35px;
 background-color: #fcba29;
 border: 1px solid #d7d7d7;
 border-radius: 3px;
+color: black;
 }
 .newGame{
   border-radius: 3px;
@@ -112,6 +113,7 @@ border-radius: 3px;
   padding: 0.5em;
   border: 1px solid rgb(207, 219, 223);
   width: 40%;
+  color: black;
 }
 .keySection>button.exist{
   background-color: green;
